@@ -134,7 +134,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #555;
+		color: #d1cfcf;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
@@ -2822,6 +2822,10 @@ input, select, textarea {
 			background: #111010;
 		}
 
+		.main.style0 {
+			background: #0d0d0e;
+		}
+
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
@@ -2917,6 +2921,8 @@ input, select, textarea {
 		background-color: #192024;
 		color: rgba(17, 16, 16, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
+		background-image: url("images/overlay1.png"), url("../../images/header2.png");
+		background-size: auto,							cover;
 		
 		overflow: hidden;
 		position: relative;
@@ -2924,14 +2930,17 @@ input, select, textarea {
 	}
 
 	#headertext {
-		text-align: left;
-		padding-left: 10%;
-		font-size: 150%;
+		text-align: center;
+		font-size: 250%;
 		font-family: Arial, Helvetica, sans-serif;
 	}
 
 	.extra-bold {
 		font-weight: 800;
+		background: radial-gradient(circle at 90% 10%, #8e8791, #a8bfda);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+
 	}
 	
 	.ce
@@ -3525,9 +3534,67 @@ input, select, textarea {
 	  }
 
 	  .chickenwing {
-		width: 25%;
-		position: absolute;
-		top: -85%;
-		left: 62.5%;
+		width: 30%;
+		position: relative;
+		top: -8.5em;
+		filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3));
 	}
 
+	.chickenwing2 {
+		width: 6%;
+		position: absolute;
+		left: 39.8%;
+		filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.61));
+	}
+
+
+	.floating {  
+		animation-name: floating;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+		margin-left: 30px;
+		margin-top: 5px;
+	}
+	 
+	@keyframes floating {
+		0% { transform: translate(0,  0px); }
+		25%  { transform: translate(0, 15px); rotate: -2deg;}
+		50% { transform: translate(0,  0px); }
+		75% { transform: translate(0,  15px); rotate: 2deg;}
+		100%   { transform: translate(0, -0px); }      
+	}
+
+	.floating2 {  
+		animation-name: floating;
+		animation-duration: 7s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+		margin-left: 30px;
+		margin-top: 5px;
+	}
+	 
+	@keyframes floating {
+		0% { transform: translate(0,  0px); }
+		25%  { transform: translate(0, 5px); rotate: 1deg;}
+		50% { transform: translate(0,  0px); }
+		75% { transform: translate(0,  5px); rotate: -1deg;}
+		100%   { transform: translate(0, -0px); }      
+	}
+
+	.floating3 {  
+		animation-name: floating;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+		margin-left: 30px;
+		margin-top: 5px;
+	}
+	 
+	@keyframes floating {
+		0% { transform: translate(0,  0px); }
+		25%  { transform: translate(0, 3px); rotate: 1deg;}
+		50% { transform: translate(0,  0px); }
+		75% { transform: translate(0,  5px); rotate: -1deg;}
+		100%   { transform: translate(0, -0px); }      
+	}
