@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #666;
+		color: #c4c4c4;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -3598,3 +3598,4 @@ input, select, textarea {
 		75% { transform: translate(0,  5px); rotate: -1deg;}
 		100%   { transform: translate(0, -0px); }      
 	}
+
